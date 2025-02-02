@@ -1,11 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 
 // ----------------------------------------------------------------------
+import Image from 'next/image';
+import logo from '../../public/images/Logo.png';
 
 export function ComingSoonView() {
 
   return (
     <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center bg-hero bg-cover">
+      <div className='absolute top-5 left-3'> 
+        <Image className="w-[133px] h-[33px]" src={logo}  alt='logo'/>
+      </div>
     <img
       src="/images/xera.svg"
       alt="image "
@@ -18,10 +23,10 @@ export function ComingSoonView() {
     />
     <div className="relative z-10 py-6 space-y-16 lg:space-y-32 text-gray-900">
       <div className="text-center space-y-10">
-        <h3 className="font-light text-xl uppercase tracking-wider">
+        {/* <h3 className="font-light text-xl uppercase tracking-wider">
           Coming soon
-        </h3>
-        <h1 className="text-7xl lg:text-9xl font-extrabold text-center">We’r blowing up</h1>
+        </h3> */}
+        <h1 className="text-7xl lg:text-9xl font-extrabold text-center">Launching Soon</h1>
         <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
           We`re under construction. Check back for an update soon. Stay in
           touch!
